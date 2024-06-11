@@ -1,0 +1,115 @@
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+  }
+  .footer-heading {
+    color: #f8f9fa;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .footer-info {
+    font-size: 16px;
+  }
+  .social-icons i {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+  }
+  .social-icons i:hover {
+    color: #38d9a9;
+  }
+      /* Custom CSS for Navigation */
+      .nav-item button {
+          transition: all 0.3s;
+      }
+      .nav-item button:hover {
+          transform: translateY(-3px);
+          font-size: x-large;
+      }
+      .dark-mode {
+          background-color: black;
+          color: white;
+      }
+      /* Custom CSS for Background Image */
+      .bg {
+          background-image: url('f3.jpg');
+          height: 100vh;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      /* Custom CSS for Slider */
+      .slider {
+          height: 250px;
+          margin: auto;
+          position: relative;
+          width: 90%;
+          overflow: hidden; /* added overflow hidden to hide overflow content */
+      }
+      .slide-track {
+          display: flex;
+          width: calc(250px * 9); /* corrected to match the number of slides */
+         /* animation: scroll 30s linear infinite; /* added animation */
+          animation: scroll 45s linear infinite;
+      }
+      .slide-track:hover {
+          animation-play-state: paused;
+      }
+      @keyframes scroll {
+          0% {
+              transform: translateX(0);
+          }
+          100% {
+              transform: translateX(calc(-250px * 9)); /* corrected to match the number of slides */
+          }
+      }
+      .slide {
+          height: 200px;
+          width: 250px;
+          display: flex;
+          align-items: center;
+          padding: 15px;
+          perspective: 100px;
+      }
+      img {
+          width: 100%;
+      }
+      img:hover {
+          transform: translate(20px);
+      }
+      .slider::before,
+      .slider::after {
+          background: linear-gradient(to right, rgba(255,255,255,1),0%,rgba(255,255,255,0) 100%);
+          content: '';
+          height: 100%;
+          position: absolute;
+          width: 15%;
+          z-index: 2;
+          top: 0; /* corrected positioning */
+      }
+      .slider::before {
+          left:0;
+      }
+      .slider::after {
+          right:0;
+          transform: rotateZ(180deg);
+      }
+      /* Responsive CSS */
+      @media screen and (max-width: 768px) {
+          .nav-item button {
+              font-size: large;
+          }
+      }
+      @media screen and (max-width: 576px) {
+          .nav-item button {
+              font-size: medium;
+          }
+      }
+      @media screen and (max-width: 480px) {
+          .nav-item button {
+              font-size: small;
+          }
+      }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        body {
+            background-image: url('about.jpg');
+            height: 100%;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .login-container {
+          /*  max-width: 400px;
+            margin: 100px auto;
+            background-image:url(GIF1.gif) ;
+          /*  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+          /*  padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+          /*  backdrop-filter: blur(8px);*/
+          max-width: 400px;
+            margin: 100px auto;
+            background-image:url(GIF1.gif) ;
+            backdrop-filter: blur(8px);
+           /* background-color:#10e1f0;*/
+           
+
+/* Full height */
+height: 100%; 
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 10px 10px 10px red, 10px 10px 20px yellow ;
+           /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333; /* Dark text color */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Exp1-reg.html">Registration</a></li>
+            <li><a href="Loginpage1.html">Login</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="login-container">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Register Form</h2>
+                            <form action="Loginpage1.html">
+                                <div class="form-group">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" autofocus required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail:</label>
+                                    <input type="email" class="form-control" id="email" name="email" list="emailList" placeholder="Email">
+                                    <datalist id="emailList">
+                                        <option value="pavan@gmail.com"></option>
+                                        <option value="pavan@yahoo.com"></option>
+                                        <option value="pavan@hotmail.com"></option>
+                                        <option value="pavan123@gmail.com"></option>
+                                    </datalist>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rollNo">College Roll No:</label>
+                                    <input type="text" class="form-control" id="rollNo" name="rollNo" list="rollList" placeholder="Roll no" required>
+                                    <datalist id="rollList" >
+                                        <option value="22kq1a05i1"></option>
+                                        <option value="22kq1a05i2"></option>
+                                    </datalist>
+                                </div>
+                                <div class="form-group">
+                                    <label for="degree">Degree:</label>
+                                    <select class="form-control" id="degree" name="degree">
+                                        <option value="engineering">Engineering</option>
+                                        <option value="medicine">Medicine</option>
+                                        <option value="AIDS">AIDS</option>
+                                        <option value="AIML">AIML</option>
+                                        <option value="IOT">IOT</option>
+                                        <option value="MECH">MECH</option>
+                                        <option value="ECE">ECE</option>
+                                        <option value="EEE">EEE</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="college">Select your college:</label>
+                                    <select class="form-control" id="college" name="college">
+                                        <option value="pace">Pace Institute of Technology and Sciences</option>
+                                        <option value="jnuta">JNTUA</option>
+                                        <option value="au">AU</option>
+                                        <option value="qis">QIS</option>
+                                        <option value="rise">RISE</option>
+                                    </select>
+                                </div>
+                                <!-- Add other form fields using Bootstrap form controls -->
+                                <!-- ... -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

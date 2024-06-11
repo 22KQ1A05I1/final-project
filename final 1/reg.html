@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register Page</title>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+      /* Your custom styles here */
+      /* Example: */
+      body {
+         background-image: url(about.jpg);
+         height: 100vh;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+   </style>
+</head>
+<body onload="myfun()">
+   <nav class="navbar navbar-dark bg-dark">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="Exp1-reg.html">Registration</a></li>
+         <li class="nav-item"><a class="nav-link" href="Loginpage1.html">Login</a></li>
+         <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+         <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+      </ul>
+   </nav>
+   <div class="container mt-5">
+      <h1 class="text-center">Register Form</h1>
+      <form action="Loginpage1.html" method="post">
+         <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First Name" autofocus required>
+         </div>
+         <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last Name" required>
+         </div>
+         <!-- Other form fields go here -->
+         <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+   </div>
+   <!-- Bootstrap JS and your custom scripts -->
+   <!-- You can add JavaScript for your alert function here -->
+</body>
+</html>

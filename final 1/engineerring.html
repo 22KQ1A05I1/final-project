@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            inline-size: 15;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+body {
+        /* Set background image */
+        background-image: url(c5.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        font-family: Arial;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Exp1-reg.html">Registation</a></li>
+            <li><a href="Loginpage1.html">login</a></li>
+            <li><a href="#">aboutus</a></li>
+            <li><a href="Contactus.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Engineering Books</h1>
+<hr>
+
+<h2>BOOKS</h2>
+<p>......</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="btect6.jpg" alt="Mountains" style="width:100%">
+      <!-- <a href="java.pdf">soft copy</a> -->
+      <a class="nav-link" href="java.pdf"><button type="button" class="btn btn-primary">softcopy</button></a>
+      <p> java programming Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibupsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="btect1.webp" alt="Lights" style="width:100%">
+      <h3>mechanical</h3>
+      <p> mechanical Lorem ipsum dolor sit amet Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="btect3.jpg" alt="Nature" style="width:100%">
+      <h3>engineering physics</h3>
+      <p>physics Lorem ipsum dolor sit amet,. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="btect4.jpg" alt="Mountains" style="width:100%">
+      <h3>electronic </h3>
+      <p>related to ece Lorem ipsum dolor sit amet,  Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="btect5.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="btect7.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="btect6.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+    </div>
+    <div class="column">
+        <div class="content">
+        <img src="btect3.jpg" alt="Mountains" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+        </div>
+        </div>
+
+<!-- END GRID -->
+
+</div>
+
+</body>
+</html>
